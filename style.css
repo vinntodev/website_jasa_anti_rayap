@@ -1,0 +1,40 @@
+.card {
+    /* width: 280px; */
+    /* height: 360px; */
+    /* padding: 2rem 1rem; */
+    background: #fff;
+    position: relative;
+    display: flex;
+    /* align-items: flex-end; */
+    box-shadow: 0.5s ease-in-out;
+}
+
+.card:hover{ 
+    transform: translate(20px);
+}
+
+.card:before{
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(33, 202, 182, 0.5), rgb(216, 242, 173));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
